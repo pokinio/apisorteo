@@ -18,7 +18,7 @@ conection.connect((error)=>{
     }
 })
 
-app.get('/api/participantes',(req,res)=>{
+app.get('/',(req,res)=>{
     conection.query('SELECT * FROM participantes',(error,results)=>{
         if(!error){
             res.send(results)
